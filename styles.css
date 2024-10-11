@@ -128,6 +128,38 @@ form .g-recaptcha {
     animation: slideInFromLeft 1s;
 }
 
+.home-section {
+    padding: 2em;
+    margin: 1em 0;
+    background: url('images/Bense.jfif') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    position: relative;
+    animation: fadeInBackground 2s;
+}
+
+.home-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay to improve text readability */
+    z-index: 1;
+}
+
+.home-section .content {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.3); /* Adjusted transparency */
+    padding: 2em;
+    border-radius: 10px;
+    color: #fff; /* Set text color to white */
+    animation: slideInFromLeft 1s;
+}
+
 h2, h3 {
     color: #00e676;
 }

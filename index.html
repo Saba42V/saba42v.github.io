@@ -20,41 +20,44 @@
             </ul>
         </nav>
     </header>
-    <section id="home">
-        <h2>Book a Service</h2>
-        <form action="submit_form" method="post" class="form-animated">
-            <label for="model">Car Model:</label>
-            <input type="text" id="model" name="model" required><br>
+    <section id="home" class="home-section">
+        <div class="content">
+            <h2>Book a Service</h2>
+            <form action="submit_form" method="post" class="form-animated">
+                <label for="model">Car Model:</label>
+                <input type="text" id="model" name="model" required><br>
 
-            <label for="regnum">Registration Number:</label>
-            <input type="text" id="regnum" name="regnum" required><br>
+                <label for="regnum">Registration Number:</label>
+                <input type="text" id="regnum" name="regnum" required><br>
 
-            <label for="serviceDate">Last Service Date:</label>
-            <input type="date" id="serviceDate" name="serviceDate" required><br>
+                <label for="serviceDate">Last Service Date:</label>
+                <input type="date" id="serviceDate" name="serviceDate" required><br>
 
-            <label for="customerName">Name:</label>
-            <input type="text" id="customerName" name="customerName" required><br>
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" name="customerName" required><br>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
 
-            <label for="location">Service Location:</label>
-            <select id="location" name="location" required>
-                <option value="chengalpattu">Chengalpattu</option>
-                <option value="nemmeli">Nemmeli</option>
-                <option value="xx">XX</option>
-                <option value="yy">YY</option>
-            </select><br>
+                <label for="location">Service Location:</label>
+                <select id="location" name="location" required>
+                    <option value="chengalpattu">Chengalpattu</option>
+                    <option value="nemmeli">Nemmeli</option>
+                    <option value="xx">XX</option>
+                    <option value="yy">YY</option>
+                </select><br>
 
-            <label for="terms">
-                <input type="checkbox" id="terms" name="terms" required>
-                I agree to the Terms and Conditions
-            </label><br>
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the Terms and Conditions
+                </label><br>
 
-            <div class="g-recaptcha" data-sitekey="your-site-key"></div><br>
+                <div class="g-recaptcha" data-sitekey="your-site-key"></div><br>
 
-            <input type="submit" value="Book Now">
-        </form>
+                <input type="submit" value="Book Now">
+            </form>
+        </div>
+        
     </section>
     <script>
         window.onbeforeunload = function () {
