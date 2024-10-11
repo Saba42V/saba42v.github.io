@@ -6,6 +6,7 @@
     <title>Welcome to Saba Car Service</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
     </header>
     <section id="home">
         <h2>Book a Service</h2>
-        <form action="submit_form" method="post">
+        <form action="submit_form" method="post" class="form-animated">
             <label for="model">Car Model:</label>
             <input type="text" id="model" name="model" required><br>
 
@@ -46,14 +47,3 @@
             </select><br>
 
             <label for="terms">
-                <input type="checkbox" id="terms" name="terms" required>
-                I agree to the Terms and Conditions
-            </label><br>
-
-            <div class="g-recaptcha" data-sitekey="your-site-key"></div><br>
-
-            <input type="submit" value="Book Now">
-        </form>
-    </section>
-</body>
-</html>
